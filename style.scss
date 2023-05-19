@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @font-face {
+    font-family: "Grotesk-Display";
+    src: url("fonts/NeueHaasDisplayRoman.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Grotesk-DisplayBold";
+    src: url("fonts/NeueHaasDisplayBOld.ttf") format("truetype");
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: "Grotesk-DisplayBold", sans-serif;
+  }
+  
+  .main-container {
+    margin: 3rem 0;
+    padding: 0 4rem;
+    font-family: "Grotesk-Display", sans-serif;
+  
+    .container-heading {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .sub-container-heading {
+        font-size: 1.35rem;
+        margin-bottom: 4rem;
+    }
+  }
+  
+  .aside {
+    float: left;
+    width: 40%;
+    height: 300px;
+    font-size: 2rem;
+  
+    button {
+      font-size: 1.25rem;
+    }
+  
+    .aside_item_link {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 2rem 1rem;;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s;
+
+      p {
+        font-weight: 600;
+        font-size: 1.35rem;
+        font-family: "Grotesk-Display", sans-serif;
+      }
+  
+      &:hover {
+        background-color: #E3E8EE;
+      }
+  
+      &.active {
+        background-color: #181a1c;
+        color: #fff;
+      }
+    }
+  }
+  
+  .content-body {
+    float: left;
+    padding: 3rem;
+    border: 1px solid #f5f5f5;
+    width: 50%;
+    height: 100%;
+    h3 {
+       border-bottom: 2px solid #009bdb;
+       padding-bottom:1rem;
+       margin-bottom: 1rem;
+       font-size: 1.65rem;
+
+    }
+
+    p {
+       margin-bottom: 1rem;
+    }
+  }
+
+
+  @media only screen and (max-width: 820px) {
+    .container-area {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-area > * {
+        width: 100%;
+    }
+    .content-body {
+        padding: 2rem;
+    }
+  }

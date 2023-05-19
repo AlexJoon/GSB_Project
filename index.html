@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <!-- Linked CSS Style Sheet. -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main container for margin and padding of content. -->
+    <main class="main-container">
+      <!-- Container header to describe the markup and purpose of page.-->
+      <h2 class="container-heading">GSB Mid-level Test</h2>
+
+      <!-- Container subheader. -->
+      <h3 class="sub-container-heading">Created by: Aleksey Przhevalskiy</h3>
+
+      <!-- Container main area. -->
+      <div class="container-area">
+        <!-- Semantic class naming to describe purpose of HTML markup -->
+        <div class="aside">
+          <!-- Utilizing JavaScript to pass an event to the script file to execute the arrow function. -->
+          <button
+            class="aside_item_link"
+            onclick="contentItemOpen(event, 'Article-1')"
+            id="initialItem"
+          >
+            <!-- Semantic usage of HTML text within a button. -->
+
+            <p>Article #1</p>
+          </button>
+
+          <!-- Utilizing JavaScript to pass an event to the script file to execute the arrow function. -->
+          <button
+            class="aside_item_link"
+            onclick="contentItemOpen(event, 'Article-2')"
+          >
+            <!-- Semantic usage of HTML text within a button. -->
+
+            <p>Article #2</p>
+          </button>
+
+          <!-- Utilizing JavaScript to pass an event to the script file to execute the arrow function. -->
+          <button
+            class="aside_item_link"
+            onclick="contentItemOpen(event, 'Article-3')"
+          >
+            <!-- Semantic usage of HTML text within a button. -->
+            <p>Article #3</p>
+          </button>
+        </div>
+
+        <!-- Semantic usage of section tags. -->
+        <section id="Article-1" class="content-body">
+          <!-- Proper HTML Hierachy with semantic usage of h3 and p tags. -->
+          <h3>Article #1</h3>
+          <p class="sub-container-desc">
+            In a Drupal Environment, data flows from the back end, to the user
+            interface through server-side functionality. It can also flow
+            through different degrees of data such as Template Rendering, Data
+            Submission, Data Processing and Front-End Development as a whole.
+          </p>
+        </section>
+
+        <!-- Semantic usage of section tags. -->
+        <section id="Article-2" class="content-body">
+          <!-- Proper HTML Hierachy with semantic usage of h3 and p tags. -->
+          <h3>Article #2</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </section>
+
+        <!-- Semantic usage of section tags. -->
+        <section id="Article-3" class="content-body">
+          <!-- Proper HTML Hierachy with semantic usage of h3 and p tags. -->
+          <h3>Article #3</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- Attached JavaScript script file for functionality. -->
+    <script src="app.js"></script>
+  </body>
+</html>
